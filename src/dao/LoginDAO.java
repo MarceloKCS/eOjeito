@@ -11,7 +11,7 @@ import pojo.Login;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class LoginDAO {
     private EntityManager getEntityManager() {

@@ -11,7 +11,7 @@ import pojo.OcorrenciaCategoria;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class OcorrenciaCategoriaDAO {
     private EntityManager getEntityManager() {

@@ -11,7 +11,7 @@ import pojo.Bloco;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class BlocoDAO {
     private EntityManager getEntityManager() {

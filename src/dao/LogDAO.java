@@ -7,13 +7,11 @@ package dao;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import pojo.EntidadeBase;
 import pojo.Log;
 
 /**
  *
- * @author marce
+ * @author Luis Fellipe
  */
 public class LogDAO {
     private EntityManager getEntityManager() {

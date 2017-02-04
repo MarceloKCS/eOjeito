@@ -11,7 +11,7 @@ import pojo.AreaComum;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class AreaComumDAO {
     private EntityManager getEntityManager() {

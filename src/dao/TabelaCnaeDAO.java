@@ -7,7 +7,7 @@ package dao;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class TabelaCnaeDAO {
     private EntityManager getEntityManager() {

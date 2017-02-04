@@ -11,7 +11,7 @@ import pojo.Reserva;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class ReservaDAO {
     private EntityManager getEntityManager() {

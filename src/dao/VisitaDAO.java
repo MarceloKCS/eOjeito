@@ -11,7 +11,7 @@ import pojo.Visita;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class VisitaDAO {
     private EntityManager getEntityManager() {

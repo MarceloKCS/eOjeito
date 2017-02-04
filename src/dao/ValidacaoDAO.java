@@ -11,7 +11,7 @@ import pojo.Validacao;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class ValidacaoDAO {
     private EntityManager getEntityManager() {

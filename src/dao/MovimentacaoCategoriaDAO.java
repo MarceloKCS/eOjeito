@@ -11,7 +11,7 @@ import pojo.MovimentacaoCategoria;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class MovimentacaoCategoriaDAO {
     private EntityManager getEntityManager() {

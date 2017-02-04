@@ -11,7 +11,7 @@ import pojo.Veiculo;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class VeiculoDAO {
     private EntityManager getEntityManager() {

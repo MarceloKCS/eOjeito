@@ -11,7 +11,7 @@ import pojo.TabelaCfop;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class TabelaCfopDAO {
     private EntityManager getEntityManager() {

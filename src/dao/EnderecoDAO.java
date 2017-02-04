@@ -11,7 +11,7 @@ import pojo.Endereco;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class EnderecoDAO {
     private EntityManager getEntityManager() {

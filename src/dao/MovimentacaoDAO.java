@@ -11,7 +11,7 @@ import pojo.Movimentacao;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class MovimentacaoDAO {
     private EntityManager getEntityManager() {

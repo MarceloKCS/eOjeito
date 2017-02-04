@@ -11,7 +11,7 @@ import pojo.Usuario;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class UsuarioDAO {
     private EntityManager getEntityManager() {

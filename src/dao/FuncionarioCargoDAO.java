@@ -11,7 +11,7 @@ import pojo.FuncionarioCargo;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class FuncionarioCargoDAO {
     private EntityManager getEntityManager() {

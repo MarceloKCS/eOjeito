@@ -11,7 +11,7 @@ import pojo.PessoaJuridica;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class PessoaJuridicaDAO {
     private EntityManager getEntityManager() {
