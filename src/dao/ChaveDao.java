@@ -6,6 +6,7 @@
 package dao;
 
 import pojo.Chave;
+import pojo.EntidadeBase;
 
 /**
  *

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="TowersPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>pojo.Log</class>
+    <class>pojo.Chave</class>
+    <class>pojo.InformativoCategoria</class>
+    <class>pojo.Visita</class>
+    <class>pojo.Funcionario</class>
+    <class>pojo.Veiculo</class>
+    <class>pojo.Login</class>
+    <class>pojo.MovimentacaoCategoria</class>
+    <class>pojo.Movimentacao</class>
+    <class>pojo.PessoaJuridica</class>
+    <class>pojo.Reserva</class>
+    <class>pojo.Informativo</class>
+    <class>pojo.Usuario</class>
+    <class>pojo.PessoaFisica</class>
+    <class>pojo.TabelaCnae</class>
+    <class>pojo.FuncionarioCargo</class>
+    <class>pojo.Contato</class>
+    <class>pojo.AreaComum</class>
+    <class>pojo.OcorrenciaCategoria</class>
+    <class>pojo.TabelaCorreios</class>
+    <class>pojo.Endereco</class>
+    <class>pojo.Validacao</class>
+    <class>pojo.TabelaCfop</class>
+    <class>pojo.Apartamento</class>
+    <class>pojo.Bloco</class>
+    <class>pojo.Ocorrencia</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/towersdb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
