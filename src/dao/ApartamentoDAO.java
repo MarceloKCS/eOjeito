@@ -12,7 +12,7 @@ import pojo.Apartamento;
 
 /**
  *
- * @author JACIANA
+ * @author Luis Fellipe
  */
 public class ApartamentoDAO {
     private EntityManager getEntityManager() {
@@ -28,32 +28,32 @@ public class ApartamentoDAO {
     }
     
     public Apartamento salvar(Apartamento apartamento) {
-        EntityManager entityManager = getEntityManager();
+        EntityManager em = getEntityManager();
         try {
-          entityManager.getTransaction().begin();
+          em.getTransaction().begin();
           if(apartamento.getIdApartamento()== null) {
-            entityManager.persist(apartamento);
+            em.persist(apartamento);
           } else {
-            apartamento = entityManager.merge(apartamento);
+            apartamento = em.merge(apartamento);
           }
-          entityManager.getTransaction().commit();
+          em.getTransaction().commit();
         } finally {
-          entityManager.close();
+          em.close();
         }
         return apartamento;
     }
     
     public void excluir(Apartamento apartamento) {
-        EntityManager entityManager = getEntityManager();
+        EntityManager em = getEntityManager();
         Apartamento apartamento = procurarId(apartamento.getId());
 		if (!em.contains(apartamento))
 			apartamento = em.merge(apartamento);
 		try {
-          entityManager.getTransaction().begin();
-          entityManager.remove(apartamento);
-          entityManager.getTransaction().commit();
+          em.getTransaction().begin();
+          em.remove(apartamento);
+          em.getTransaction().commit();
         } finally {
-          entityManager.close();
+          em.close();
         }
     }
     
