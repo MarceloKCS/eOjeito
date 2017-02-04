@@ -29,32 +29,32 @@ public class LogDAO {
     }
     
     public Log salvar(Log log) {
-        EntityManager entityManager = getEntityManager();
+        EntityManager em = getEntityManager();
         try {
-          entityManager.getTransaction().begin();
+          em.getTransaction().begin();
           if(log.getIdLog()== null) {
-            entityManager.persist(log);
+            em.persist(log);
           } else {
-            log = entityManager.merge(log);
+            log = em.merge(log);
           }
-          entityManager.getTransaction().commit();
+          em.getTransaction().commit();
         } finally {
-          entityManager.close();
+          em.close();
         }
         return log;
     }
     
     public void excluir(Log log) {
-        EntityManager entityManager = getEntityManager();
+        EntityManager em = getEntityManager();
         Log log = procurarId(log.getId());
 		if (!em.contains(log))
 			log = em.merge(log);
 		try {
-          entityManager.getTransaction().begin();
-          entityManager.remove(log);
-          entityManager.getTransaction().commit();
+          em.getTransaction().begin();
+          em.remove(log);
+          em.getTransaction().commit();
         } finally {
-          entityManager.close();
+          em.close();
         }
     }
     
